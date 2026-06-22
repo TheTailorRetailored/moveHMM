@@ -1,5 +1,15 @@
 
 
+# moveHMM — historical Pareto-support fork
+
+> **Archived fork:** During my MPhil research in 2018, I extended moveHMM 1.6 with Pareto Type I step-length distributions. The change covers likelihood evaluation, fitting and simulation, with the distribution parameterised by minimum step length `xmin` and shape `mu`.
+>
+> This branch is preserved as a record of that contribution. It is based on an old moveHMM release and should not be used in place of the [current upstream package](https://github.com/TheoMichelot/moveHMM).
+
+The Pareto-specific implementation is in `R/paretoI.R` and `src/densities.h`, with integration through `fitHMM`, `nLogLike`, `simData` and the package's parameter handling. Focused regression tests are in `tests/testthat/test_paretoI.R`.
+
+## Upstream project
+
 # moveHMM [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/moveHMM)](https://cran.r-project.org/package=moveHMM) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Downloads](http://cranlogs.r-pkg.org/badges/moveHMM)](https://cran.r-project.org/package=moveHMM)
 
 An R package for modelling animal movement with hidden Markov models.

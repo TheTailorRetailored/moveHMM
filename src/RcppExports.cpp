@@ -65,9 +65,9 @@ BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< double >::type mu(muSEXP);
     Rcpp::traits::input_parameter< double >::type xmin(xminSEXP);
-    rcpp_result_gen = Rcpp::wrap(dparetoI_rcpp(x, mu, xmin));
+    Rcpp::traits::input_parameter< double >::type mu(muSEXP);
+    rcpp_result_gen = Rcpp::wrap(dparetoI_rcpp(x, xmin, mu));
     return rcpp_result_gen;
 END_RCPP
 }

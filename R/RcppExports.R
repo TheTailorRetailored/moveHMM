@@ -62,7 +62,7 @@ dexp_rcpp <- function(x, rate, foo = 0) {
 #' @param mu mu
 #'
 #' @return Vector of densities
-dparetoI_rcpp <- function(x, xmin = 0, mu) {
+dparetoI_rcpp <- function(x, xmin, mu) {
     .Call('_moveHMM_dparetoI_rcpp', PACKAGE = 'moveHMM', x, xmin, mu)
 }
 #' Von Mises density function

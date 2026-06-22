@@ -6,7 +6,7 @@
 #' @param nbAnimals Number of observed individuals to simulate.
 #' @param nbStates Number of behavioural states to simulate.
 #' @param stepDist Name of the distribution of the step lengths (as a character string).
-#' Supported distributions are: gamma, weibull, lnorm, exp. Default: gamma.
+#' Supported distributions are: gamma, weibull, lnorm, exp, paretoI. Default: gamma.
 #' @param angleDist Name of the distribution of the turning angles (as a character string).
 #' Supported distributions are: vm, wrpcauchy. Set to \code{"none"} if the angle distribution should
 #' not be estimated. Default: vm.

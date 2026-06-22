@@ -24,7 +24,7 @@
 #' @param delta0 Initial value for the initial distribution of the HMM. Default: \code{rep(1/nbStates,nbStates)}.
 #' @param formula Regression formula for the covariates. Default: \code{~1} (no covariate effect).
 #' @param stepDist Name of the distribution of the step lengths (as a character string).
-#' Supported distributions are: gamma, weibull, lnorm, exp. Default: gamma.
+#' Supported distributions are: gamma, weibull, lnorm, exp, paretoI. Default: gamma.
 #' @param angleDist Name of the distribution of the turning angles (as a character string).
 #' Supported distributions are: vm, wrpcauchy. Set to \code{"none"} if the angle distribution should
 #' not be estimated. Default: vm.

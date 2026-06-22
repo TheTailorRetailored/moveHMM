@@ -9,7 +9,7 @@
 #' number of parameters of the turning angle distribution.
 #' @param data An object \code{moveData}.
 #' @param stepDist Name of the distribution of the step lengths (as a character string).
-#' Supported distributions are: gamma, weibull, lnorm, exp. Default: gamma.
+#' Supported distributions are: gamma, weibull, lnorm, exp, paretoI. Default: gamma.
 #' @param angleDist Name of the distribution of the turning angles (as a character string).
 #' Supported distributions are: vm, wrpcauchy. Set to \code{"none"} if the angle distribution should
 #' not be estimated. Default: vm.
